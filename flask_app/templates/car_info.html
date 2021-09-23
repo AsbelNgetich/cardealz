@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{url_for('static',filename='style.css')}}">
+    <title>Car Info</title>
+</head>
+<body>
+
+    <!-- <div class="container_main"> -->
+        <div class="car_info_header">
+            <div class="header_right">
+                <!-- <a href="/dashboard">Dashboard</a> -->
+                <form action="/dashboard">
+                    <input type="submit" value="Dashboard" />
+                </form>
+
+                <!-- <a href="/logout">Logout</a> -->
+                <form action="/logout">
+                    <input type="submit" value="Logout" />
+                </form>
+                
+            </div>
+        </div>
+        <div class="carinfo">
+            <div class="car_description">
+              
+                <h3>${{car.price}}</h3>
+                <p>Model: {{car.model}}</p>
+                <p>Make: {{car.make}}</p>
+                <p>Year:{{car.year}}</p>
+                <p>Description:</p>
+                <p id="car_description_contents">{{car.description}}</p>
+
+                {% for info in user %}
+                <div class = "buy_car">
+                    <p>Seller:{{info['first_name']}} {{info['last_name']}}</p>
+                    <!-- <a href="/cars/delete/{{car.id}}">Purchase</a> -->
+                    <form action="/cars/delete/{{car.id}}">
+                        <input type="submit" value="Purchase" />
+                    </form>
+
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    <!-- </div> -->
+</body>
+</html>

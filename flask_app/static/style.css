@@ -1,0 +1,145 @@
+/* body {
+  display: flex;
+  justify-content: center;
+} */
+
+h1 {
+  text-align: center;
+}
+/* ........login page ...... */
+.container_login {
+  margin-left: 20%;
+  height: 800px;
+  width: 800px;
+  margin-top: 20px;
+  background-color: rgb(245, 245, 227);
+  border: 1px solid black;
+}
+
+/* ...........main page....... */
+.container_main {
+  width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+}
+.container_main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*   table styling */
+.main_contents {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  /* border: 1px solid black; */
+  /* margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+}
+.main_table {
+  width: 600px;
+  border: 1px solid black;
+}
+
+/* ....New magazine page.... */
+
+.container_addmag_header {
+  display: flex;
+  justify-content: flex-end;
+}
+.header_right {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ..........update user page.......... */
+.container_update_header {
+  display: flex;
+  justify-content: flex-end;
+}
+.container_Update_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_forms {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_user {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin-bottom: 5px;
+}
+
+#submit_btn {
+  margin-top: 5px;
+}
+
+#error_messages {
+  color: red;
+  margin-bottom: 5px;
+  margin-left: 150px;
+}
+#editcar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.update_car {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#table_contents {
+  padding-right: 10px;
+}
+
+/* ............car info page.......... */
+.carinfo {
+  display: flex;
+  justify-content: center;
+}
+.car_info_header {
+  display: flex;
+  justify-content: flex-end;
+}
+.car_description {
+  border: 1px solid black;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.buy_car {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #car_description_contents {
+
+} */
